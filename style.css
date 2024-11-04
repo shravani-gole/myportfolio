@@ -1,0 +1,106 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fdf6f9;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', sans-serif; 
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #ff7e9f;
+}
+
+/* Header */
+header {
+    padding: 2rem;
+    background-color: #ffe4e6;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #a2e1c9;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+/* Center-align Sections */
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Container and Card Styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #ffe4e6;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffe4e6;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
